@@ -37,3 +37,7 @@ if ($Output.Memory -gt $Limit) {
 	"Memory bottleneck: $($Output.Memory)%"
 } else {
 	"Memory usage is below limit: $($Output.Memory)%"
+if ($Output.Network -gt $Limit) {
+	"Internet bandwidth bottleneck: $($Output.Network)%"
+} else {
+	"Network bandwidth usage is below limit: $($Output.Network)%"
